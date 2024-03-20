@@ -606,6 +606,9 @@ GameObject:
   - component: {fileID: 8154088540470525728}
   - component: {fileID: 5743004827403237942}
   - component: {fileID: 4614644590154057936}
+  - component: {fileID: 245507122635259006}
+  - component: {fileID: 8193092173617379615}
+  - component: {fileID: -3396001402011530415}
   m_Layer: 0
   m_Name: Animal_Moose_02
   m_TagString: Untagged
@@ -621,7 +624,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8403241897452019304}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 2.587992, y: 180, z: 12.850264}
   m_LocalScale: {x: 11, y: 11, z: 11}
   m_ConstrainProportionsScale: 0
@@ -637,7 +640,7 @@ Transform:
   - {fileID: 7063673438095595381}
   - {fileID: 6234995699818764700}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &5743004827403237942
 Animator:
   serializedVersion: 5
@@ -671,7 +674,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b0bfd1d992cdc641b9e6177ffc18182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 40
+  speed: 10
+--- !u!65 &245507122635259006
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8403241897452019304}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.13750815, y: 0.43358266, z: 0.63474023}
+  m_Center: {x: 0.00046817283, y: 0.21652777, z: 0.1826311}
+--- !u!114 &8193092173617379615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8403241897452019304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f94aca2db5c23164fa9c46da726b1207, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-3396001402011530415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8403241897452019304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beace0c6621d2c143a95e5527387b3ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8652323807894579037
 GameObject:
   m_ObjectHideFlags: 0

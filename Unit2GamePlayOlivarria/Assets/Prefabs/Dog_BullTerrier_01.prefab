@@ -5939,6 +5939,9 @@ GameObject:
   - component: {fileID: 3513221972922996144}
   - component: {fileID: 6959946203556784920}
   - component: {fileID: 7307362351744352223}
+  - component: {fileID: 976608757333075083}
+  - component: {fileID: 4039674117319234594}
+  - component: {fileID: 852975232700352128}
   m_Layer: 0
   m_Name: Dog_BullTerrier_01
   m_TagString: Untagged
@@ -5954,7 +5957,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8681581167498162625}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 10.15, y: 180, z: 11.05}
   m_LocalScale: {x: 8, y: 8, z: 8}
   m_ConstrainProportionsScale: 0
@@ -5997,7 +6000,7 @@ Transform:
   - {fileID: 3375982324455857293}
   - {fileID: 2768404697233751707}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &6959946203556784920
 Animator:
   serializedVersion: 5
@@ -6031,7 +6034,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b0bfd1d992cdc641b9e6177ffc18182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 40
+  speed: 10
+--- !u!65 &976608757333075083
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8681581167498162625}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.089286566, y: 0.25595284, z: 0.2824856}
+  m_Center: {x: 0.004052043, y: 0.09863758, z: 0.030587256}
+--- !u!114 &4039674117319234594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8681581167498162625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f94aca2db5c23164fa9c46da726b1207, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &852975232700352128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8681581167498162625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beace0c6621d2c143a95e5527387b3ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8810777003505957869
 GameObject:
   m_ObjectHideFlags: 0
